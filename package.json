@@ -1,0 +1,39 @@
+{
+  "name": "mastercloudapps-node-rest-api-with-db",
+  "version": "0.0.1",
+  "description": "Rest API using NodeJS + MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=9000 npm run lint && node src/server.js",
+    "develop": "nodemon src/server.js",
+    "lint": "eslint --format table '**/*.js'",
+    "lint:fix": "eslint --fix '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiergarciagonzalez/mastercloudapps-node-rest-api-with-db.git"
+  },
+  "keywords": [
+    "Rest",
+    "API",
+    "NodeJS",
+    "MongoDB",
+    "MasterCloudApps"
+  ],
+  "author": "Javier Garcia Gonzalez <javier@garciagon.com>",
+  "bugs": {
+    "url": "https://github.com/javiergarciagonzalez/mastercloudapps-node-rest-api-with-db/issues"
+  },
+  "homepage": "https://github.com/javiergarciagonzalez/mastercloudapps-node-rest-api-with-db#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^0.14.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "nodemon": "^2.0.6"
+  }
+}
